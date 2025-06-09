@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("https://i.ytimg.com/vi/yZ_Ppfg886A/maxresdefault.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  text-align: center;
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 0;
+}
+body > * {
+  position: relative;
+  z-index: 1
+}
+header {
+  padding: 40px 20px;
+  background-color: rgba(46, 46, 46, 0.6);
+}
+h1 {
+  font-family: "MinecraftFive", sans-serif;
+}
+p {
+  font-family: "MinecraftFive", sans-serif;
+}
+h2 {
+  font-family: "MinecraftSimple", sans-serif;
+  font-weight: normal;
+}
+#buton {
+  font-family: "MinecraftTen", sans-serif;
+  font-size: 25px;
+}
+#store {
+  font-family: "MinecraftSimple", sans-serif;
+}
+#butt-color {
+  color: #3c00ff;
+}
+#tg {
+  font-family: "MinecraftSimple", sans-serif;
+}
+#ds {
+  font-family: "MinecraftSimple", sans-serif
+}
+.button {
+  background-color: #27ae60;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  text-decoration: none;
+  border-radius: 8px;
+  display: inline-block;
+  margin-top: 20px;
+}
+.button:hover{
+  background-color: #176939
+}
+.portfolio {
+  padding: 30px 20px;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto
+}
+.gallery img {
+  width: 250px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #000;
+  transition: transform 0.3s;
+}
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Спеціальні стилі для work10, work11, work12 */
+.gallery img[src*="work10"] {
+  object-fit: contain;
+  height: auto;
+  max-height: 250px;
+  background-color: #60cc2c;
+}
+
+.gallery img[src*="work12"] {
+  object-fit: contain;
+  height: auto;
+  background-color: #ffffff;
+}
+
+.gallery img[src*="work11"] {
+  object-fit: contain;
+  height: 250px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  padding: 20px;
+  background-color: rgba(46, 46, 46, 0.6);
+  font-size: 14px;
+}
+@font-face {
+  font-family: "MinecraftTen";
+  src: url("fonts/MinecraftTen.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MinecraftFive";
+  src: url("fonts/MinecraftFive.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MinecraftSimple";
+  src: url("fonts/MinecraftSimple.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@media (max-width: 600px) {
+  .gallery img {
+    width: 100%;
+  }
+}
