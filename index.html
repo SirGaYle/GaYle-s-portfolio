@@ -4,17 +4,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GaYle Shop - Портфоліо</title>
-  <link rel="stylesheet" href="s" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>GaYle Shop</h1>
-    <p id="store">Магазин скінів, аватарок та інших робіт</p>
-    <a id="buton" href="https://t.me/gayle_shop" class="button" target="_blank">Перейти в магазин</a>
+    <div class="language-switcher">
+      <button id="lang-uk" class="lang-btn active">УКР</button>
+      <button id="lang-en" class="lang-btn">ENG</button>
+    </div>
+    <h1 data-uk="GaYle Shop" data-en="GaYle Shop">GaYle Shop</h1>
+    <p id="store" data-uk="Магазин скінів, аватарок та інших робіт" data-en="Shop for skins, avatars and other works">Магазин скінів, аватарок та інших робіт</p>
+    <a id="buton" href="https://t.me/gayle_shop" class="button" target="_blank" data-uk="Перейти в магазин" data-en="Go to shop">Перейти в магазин</a>
   </header>
 
   <section class="portfolio">
-    <h2>Мої роботи</h2>
+    <h2 data-uk="Мої роботи" data-en="My Works">Мої роботи</h2>
     <div class="gallery">
       <img src="media/work1.png" alt="Робота 1">
       <img src="media/work2.png" alt="Робота 2">
@@ -32,7 +36,8 @@
   </section>
 
   <footer>
-    <p>&copy; 2025 GAYLE SHOP | Telegram: @yt_gayle</p> <p>Discord: @sir_gayle</p>
+    <p data-uk="&copy; 2025 GAYLE SHOP | Telegram: @yt_gayle" data-en="&copy; 2025 GAYLE SHOP | Telegram: @yt_gayle">&copy; 2025 GAYLE SHOP | Telegram: @yt_gayle</p> 
+    <p data-uk="Discord: @sir_gayle" data-en="Discord: @sir_gayle">Discord: @sir_gayle</p>
   </footer>
 
   <script src="script.js"></script>
